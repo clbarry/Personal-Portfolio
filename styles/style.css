@@ -84,7 +84,7 @@ h2, h3, h4, h5, h6, p, li {
     margin: 15px;
 }
 
-.page-nav ul > li {
+#page-nav ul > li {
     display: inline-block;
     margin: 15px;
 }
