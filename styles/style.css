@@ -1,0 +1,100 @@
+
+/* ****** OVERALL SITE STYLE DEFINITIONS OF REUSABLE VARIABLES ******* */
+
+/* Colors Palatte Plan */
+    /* #162b35   Dark Slate Blue/Deep Teal - font color*/  
+    /* #3d6b7a   Muted Teal - quote font color*/
+    /* #f1faf7   Wisper Teal - Background color */
+    /* #6b4f7a   Dusty Plum - link color */
+    /* #7c3f7a   Deep Magenta Purple - link already visited*/
+    /* #c2dfe8   Teal Wash - background color for hover*/
+    /* #1a5c73   Deep Teal - active nav background */
+    /* #f1faf7   Whisper Teal - active nav text - light for dark background */
+
+    /* #365b6d   Gray Azure - Alternative choice for font color */  
+    /* #f6f5f5   Warm Gray - Alternative choice for background */
+
+/* Font Styling */
+    /* Font Family - First Choice for headings: 'Playfair Display', serif; */
+    /* Font Family - First Choice for body text: 'Montserrat', sans-serif; */
+    /* Playfair Display - https://fonts.google.com/specimen/Playfair+Display */
+    /* Montserrat - https://fonts.google.com/specimen/Montserrat */
+
+/* dfines in one location for easier/consistent style changes */
+:root {
+    /*--colors--*/
+    --primary-font-color: #162b35;    /* dfines primary font color*/
+    --quote-font-color: #3d6b7a;      /* dfines quote font color*/
+    --link-color: #2e7d9a;            /* dfines link font color*/
+    --link-visited: #7c3f7a;          /* dfines link font color for a link already visited*/
+    --hover-backgrnd: #c2dfe8;        /* dfines background color for hover*/
+    --active-backgrnd: #1a5c73;       /* dfines background color for active nav*/
+    --active-font-color: #f1faf7;     /* dfines text color for active nav*/
+    --site-background-color: #f1faf7; /* dfines site backbroud color*/ 
+
+    /*--fonts--*/
+    --heading-font: Georgia;            /* dfines heading font family*/
+    --text-font: Georgia;               /* dfines text font family*/           
+}
+
+body {
+    background-color: var(--site-background-color);
+}
+
+/* Style Based on state */
+a:link {color: var(--link-color);}
+a:visited {color: var(--link-visited)}
+a:hover {background: var(--hover-backgrnd);}
+a:active {
+    background-color: var(--active-backgrnd);
+    color: var(--active-font-color); 
+}
+
+/* Define the box model as Alternative Box Model */
+.box {
+    box-sizing: border-box;             /* border-box setting will include (padding + border in total defined dimensions */
+}
+
+
+/*
+Source - https://stackoverflow.com/a/15710719
+Posted by What have you tried, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-23, License - CC BY-SA 4.0
+    /* You can also add some margins here to make it look prettier
+*/
+
+/* Navigation Bar Styling  */
+/* NOT WORKING */
+/* Working when used ul > li {... but education was an issue; stopped working when added .page-nav or .site-nav*/
+.site-nav ul > li  {
+    display: inline-block;
+    margin: 15px;
+}
+
+.page-nav ul > li {
+    display: inline-block;
+    margin: 15px;
+}
+
+/*. */
+
+#quotes {
+    font-style: italic;
+}
+
+/* Images */
+.solo-image-h {
+    height: 500px;
+    margin: 20;
+    border: 10; 
+}
+
+/* Video Box Settings */
+.youtube-video {
+    max-height: 300px;
+    padding: 10;
+    margin: 10;
+    border-width: 5;
+    border-style: solid;
+    border-color: var(--primary-font-color);
+}
