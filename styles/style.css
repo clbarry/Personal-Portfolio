@@ -50,7 +50,7 @@ body {
     background-color: var(--site-background-color);
 }
 
-/***** Style Based on state ******/
+/************ Style Based on state *************/
 a:link {color: var(--link-color);}
 a:visited {color: var(--link-visited)}
 a:hover {background: var(--hover-backgrnd);}
@@ -59,7 +59,7 @@ a:active {
     color: var(--active-font-color); 
 }
 
-/************** FONTS **************/
+/****************** FONTS *********************/
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-font-color);
@@ -94,6 +94,20 @@ h2, h3, h4, h5, h6, p, li {
 
 
 /* Images */
+.photo-vertical {
+    max-height: 300px;
+    width: auto;
+    padding: 10; 
+    margin: 20;
+} 
+
+.photo-horizontal {
+    max-height: 300px;
+    width: auto;
+    padding: 10; 
+    margin: 20;
+} 
+
 .solo-image-h {
     height: 500px;
     margin: 20;
