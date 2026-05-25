@@ -6,7 +6,7 @@ A personal portfolio website for Carey Barry, PhD student in Personal Health Inf
 
 ## Project Objective
 
-Build a clean, accessible, multi-page personal portfolio website to showcase professional accomplishments, research publications, teaching experience, and personal interests — developed as part of the Web Development course at Northeastern University.
+Build a clean, accessible, multi-page personal portfolio website to showcase professional accomplishments, research publications, teaching experience, and personal interests — developed as part of the Web Development course at Northeastern University. 
 
 ---
 
@@ -75,6 +75,7 @@ Built for: [Web Development — Northeastern University (Online, Summer 2026)](h
 
 See AI Discolsures markdown file. 
 Full disclosure log: [AI Discolsure.md](./AI%20Discolsure.md)
+As outlined in the assignment, one of the pages was to be built using generative AI; I chose the Publication page. 
 
 ---
 
