@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <meta name="author" content="Carey Barry" />
     <meta name="description" content="Personal page of Carey Barry: Physician Associate, educator, and researcher. Explore publications, teaching, and more about her experience." />
+    <!-- DID NOT WORK <img src="Assets/Logos/CBLogo.png" alt="My Logo" /> -->
 
 </head>
 <body>
@@ -22,8 +23,8 @@
         <header id="header">
             <!-- Social Media & Contacts in top -->
             <ul>
-                <li><a href= url'www.linkedin.com/in/carey-barry-278b8a140'>LinkedIn</a></li>
-                <li><a href= url'https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en'>Google Scholar</a></li>
+                <li><a href='www.linkedin.com/in/carey-barry-278b8a140'>LinkedIn</a></li>
+                <li><a href='https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en'>Google Scholar</a></li>
                 <li><a href= url'https://orcid.org/0000-0001-6133-0087'>ORCID</a></li>
                 <li><a href= url'https://www.instagram.com/c_barrypa/'>Instagram</a></li>
                 <li><a href= url'https://github.com/clbarry'>GitHub</a></li>
@@ -116,71 +117,82 @@
 
                     <!-- Photograph Row 1 -->
                     <div class="row">
-                        <figure class="photo-vertical"> 
-                            <img
-                                class="col-4" 
-                                src="/Assets/Images/NU_Flower_DaliaBee.JPG" 
-                                alt="A pink and white Dalia with a visiting bee."/>
+                        <!-- Photograph -->
+                        <div class="col">
+                            <figure class="photo-vertical"> 
+                                <img
+                                    class="col-md-4" 
+                                    src="/Assets/Images/NU_Flower_DaliaBee.JPG" 
+                                    alt="A pink and white Dalia with a visiting bee."/>
+                            </figure>
+                        </div>
+
+                        <!-- Photograph -->
+                        <div class="col">
+                            <figure class="photo-horizontal">
+                                <img
+                                    class="col-md-6" 
+                                    src="/Assets/Images/NU_Flower_RedBee.jpg" 
+                                    alt="A red flower with a visiting bee."/>
+                            </figure>
+                        </div>
+                    </div>
+
+
+                    <!-- Photograph Row 2-->
+                    <div class="row">
+                        <!-- Photograph -->
+                        <figure class="photo-horizontal">
+                            <img 
+                                class="col-6"
+                                src="/Assets/Images/NU_Sign.jpg" 
+                                alt="A sign on campus with surrounding flowers."/>
+                        </figure>
+
+                        <!-- Photograph -->
+                        <figure class="photo-vertical">
+                            <img 
+                                class="col-4"
+                                src="/Assets/Images/NU_Flower_Magnolias.jpg" 
+                                alt="A view down the path through magnolia trees on campus."/>
+                        </figure>
+                    </div>
+
+                    <!-- Photograph Row 3 -->
+                    <div class="row">
+                        <!-- Photograph --> 
+                        <figure class="photo-vertical">
+                            <img 
+                                class="col-6"
+                                src="/Assets/Images/NU_Flower_Poppys.JPG" 
+                                alt="A close up photo of a yellow flower on campus."/>
                         </figure>
 
                         <!-- Photograph -->
                         <figure class="photo-horizontal">
-                            <img
-                                class="col-md-6" 
-                                src="/Assets/Images/NU_Flower_RedBee.jpg" 
-                                alt="A red flower with a visiting bee."/>
+                            <img 
+                                class="col-6"
+                                src="/Assets/Images/NU_Bunny.jpg" 
+                                alt="A bunny on campus."/>
                         </figure>
                     </div>
 
-
                     <!-- Photograph -->
-                    <figure class="horizontal">
+                    <figure class="photo-vertical">
                         <img 
-                            src="/Assets/Images/NU_Sign.jpg" 
-                            alt="A sign on campus with surrounding flowers."/>
-                    </figure>
-
-                    <!-- Photograph -->
-                    <figure class="vertical">
-                        <img 
-                            src="/Assets/Images/NU_Flower_Magnolias.jpg" 
-                            alt="A view down the path through magnolia trees on campus."/>
-                    </figure>
-
-                    <!-- Photograph -->
-                    <figure class="vertical">
-                        <img 
-                            src="/Assets/Images/NU_Flower_Poppys.JPG" 
-                            alt="A close up photo of a yellow flower on campus."/>
-                    </figure>
-
-                    <!-- Photograph -->
-                    <figure class="horizontal">
-                        <img 
-                            src="/Assets/Images/NU_Bunny.jpg" 
-                            alt="A bunny on campus."/>
-                    </figure>
-
-                    <!-- EXTRA DEPENDING ON GRID -->
-                    <figure class="vertical">
-                        <img 
+                            class="col-5"
                             src="/Assets/Images/NU_Flower_Purple.jpg" 
                             alt="A purple flower buds on campus."/>
                     </figure>
 
-                    <!-- EXTRA DEPENDING ON GRID -->
-                    <figure class="vertical">
+                    <!-- Photograph -->
+                    <figure class="photo-vertical">
                         <img 
-                            src="/Assets/Images/NU_Flower_BlackEyeSusan.JPG" 
-                            alt="A black-eyed Susan flower on campus."/>
-                    </figure>
-
-                    <!-- EXTRA DEPENDING ON GRID -->
-                    <figure class="vertical">
-                        <img 
+                            class="col-5"
                             src="/Assets/Images/NU_Blackman.jpg" 
                             alt="A photo of a PA student white coat with a husky paw projected on the wall in the background."/>
                     </figure>
+
 
             </section>
         </main>
