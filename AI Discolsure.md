@@ -35,6 +35,8 @@ AI Used: Claude Sonnet 4.6
 - I had an issue with the links for social media not working. I used Claude as follows. 
     Prompt: What are common issues with links to social media sites in html. 
 
+- I had issues with deployment in Netlify. I used Claude to paste the error and explain what to do. I needed to removd the build command because the site only included HTML/CSS or I needed to add a build command in the Json file. I chose to removed the build command on Netlify. 
+
 
 ***************************************************
 AI Used for Publications Page Using the Following Prompts
