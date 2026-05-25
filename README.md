@@ -23,6 +23,14 @@ Build a clean, accessible, multi-page personal portfolio website to showcase pro
 
 ---
 
+## Design
+
+The visual design of this portfolio was planned prior to development, covering layout, color palette, and typography decisions.
+
+📄 [View Design Document](./Assets/Design/Design.pdf)
+
+---
+
 ## Tech Requirements
 
 | Tool / Technology | Purpose |
