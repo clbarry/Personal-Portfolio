@@ -13,6 +13,11 @@ Build a clean, accessible, multi-page personal portfolio website to showcase pro
 ## Screenshots
 
 > *Screenshots / GIFs coming soon.*
+![Demo of portfolio About/Home Page](https://github.com/clbarry/Personal-Portfolio/blob/main/Assets/Demo/Pg1_AboutMe.gif)
+
+![Demo of portfolio About/Home Page](https://github.com/clbarry/Personal-Portfolio/blob/main/Assets/Demo/Pg2_Publications.gif)
+
+![Demo of portfolio About/Home Page](https://github.com/clbarry/Personal-Portfolio/blob/main/Assets/Demo/Pg3_Teaching.gif)
 
 ---
 
