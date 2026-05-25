@@ -1,8 +1,6 @@
-
-/* ****** OVERALL SITE STYLE DEFINITIONS OF REUSABLE VARIABLES ******* */
-
+/************** COLORS **************/
 /* Colors Palatte Plan */
-    /* #162b35   Dark Slate Blue/Deep Teal - font color*/  
+    /* #162b35 vs. #1b323d  Dark Slate Blue/Deep Teal - font color*/  
     /* #3d6b7a   Muted Teal - quote font color*/
     /* #f1faf7   Wisper Teal - Background color */
     /* #6b4f7a   Dusty Plum - link color */
@@ -14,34 +12,45 @@
     /* #365b6d   Gray Azure - Alternative choice for font color */  
     /* #f6f5f5   Warm Gray - Alternative choice for background */
 
+
+/************** FONTS **************/
 /* Font Styling */
     /* Font Family - First Choice for headings: 'Playfair Display', serif; */
     /* Font Family - First Choice for body text: 'Montserrat', sans-serif; */
     /* Playfair Display - https://fonts.google.com/specimen/Playfair+Display */
     /* Montserrat - https://fonts.google.com/specimen/Montserrat */
+    /* Resource: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts*/
+
+
+/* ****** OVERALL SITE STYLE + DEFINITIONS OF REUSABLE VARIABLES ******* */
+
+/* Define the box model as Alternative Box Model */
+.box {
+    box-sizing: border-box;           /* border-box setting will include (padding + border in total defined dimensions */
+}
 
 /* dfines in one location for easier/consistent style changes */
 :root {
     /*--colors--*/
-    --primary-font-color: #162b35;    /* dfines primary font color*/
+    --primary-font-color: #1b323d;    /* dfines primary font color*/
     --quote-font-color: #3d6b7a;      /* dfines quote font color*/
     --link-color: #2e7d9a;            /* dfines link font color*/
     --link-visited: #7c3f7a;          /* dfines link font color for a link already visited*/
     --hover-backgrnd: #c2dfe8;        /* dfines background color for hover*/
     --active-backgrnd: #1a5c73;       /* dfines background color for active nav*/
     --active-font-color: #f1faf7;     /* dfines text color for active nav*/
-    --site-background-color: #f1faf7; /* dfines site backbroud color*/ 
+    --site-background-color: #f1faf7; /* dfines site backbroud color*/      
 
     /*--fonts--*/
-    --heading-font: Georgia;            /* dfines heading font family*/
-    --text-font: Georgia;               /* dfines text font family*/           
+    --heading-font: Georgia;        /* defines heading font family*/
+    --text-font: Lucida, serif;    /* defines text font family*/       
 }
 
 body {
     background-color: var(--site-background-color);
 }
 
-/* Style Based on state */
+/***** Style Based on state ******/
 a:link {color: var(--link-color);}
 a:visited {color: var(--link-visited)}
 a:hover {background: var(--hover-backgrnd);}
@@ -50,19 +59,22 @@ a:active {
     color: var(--active-font-color); 
 }
 
-/* Define the box model as Alternative Box Model */
-.box {
-    box-sizing: border-box;             /* border-box setting will include (padding + border in total defined dimensions */
+/************** FONTS **************/
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-font-color);
+    font-weight: bold;
 }
 
+h2, h3, h4, h5, h6, p, li {
+    font-family: var(--text-font);
+    color: var(--primary-font-color);
+}
 
-
-/*
-Source - https://stackoverflow.com/a/15710719
-Posted by What have you tried, modified by community. See post 'Timeline' for change history
-Retrieved 2026-05-23, License - CC BY-SA 4.0
-    /* You can also add some margins here to make it look prettier
-*/
+.quotes {
+    font-style: italic;
+    color: var(--quote-font-color);
+}
 
 /* Navigation Bar Styling  */
 /* NOT WORKING */
@@ -79,9 +91,7 @@ Retrieved 2026-05-23, License - CC BY-SA 4.0
 
 /*. */
 
-#quotes {
-    font-style: italic;
-}
+
 
 /* Images */
 .solo-image-h {
