@@ -2,6 +2,7 @@
 
 A personal portfolio website for Carey Barry, PhD student in Personal Health Informatics at Northeastern University, clinical professor, and surgical PA. The site highlights her academic background, publications, teaching, and campus photography.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/47d53912-d65c-45f3-bb53-e51e1c1930a0/deploy-status)](https://app.netlify.com/projects/careybarry/deploys)
 ---
 
 ## Project Objective
