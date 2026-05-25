@@ -66,6 +66,7 @@ Built for: [Web Development — Northeastern University (Online, Summer 2026)](h
 ## AI Use Disclosure
 
 See AI Discolsures markdown file. 
+Full disclosure log: [AI Discolsure.md](./AI%20Discolsure.md)
 
 ---
 
