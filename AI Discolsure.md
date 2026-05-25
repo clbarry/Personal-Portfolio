@@ -47,8 +47,10 @@ AI Used: Claude Sonnet 4.6
      Author with link to homepage: https://6a144a03a26fdfb8ffbbcc98--careybarry.netlify.app/
      Reference to the class link: https://johnguerra.co/classes/webDevelopment_online_summer_2026/
 
+- After reading mdn, I still did not understand how to add an icon. I mixed images and link and only found out on the W3C review. I used Claude to help explain using the following prompts. 1. How do I add a small image on the web tab in HTML header. 2. but where does favicon live. 3. does it need to be png, 4. I want to use this format: <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"> how do I name the file. 5. Can it be in nested file. 6. Do I need to make the icon that size or does it size what I put there. 7. Canva won't make it that small. I want to reflect that this helped me understand the norms around naming conventions, the requirements in the header, and a resource to convert the icon (favicon.io).
 
 ***************************************************
+
 AI Used for Publications Page Using the Following Prompts
 
 Prompts Used 
