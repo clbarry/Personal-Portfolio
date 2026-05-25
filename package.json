@@ -1,0 +1,31 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "AI Use Disclosure:  - I used Claude to detrmine what to add to the .gitignore file     Prompt used: I am starting a project using HTML, CSS, and JS what do I add to a gitignore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clbarry/Personal-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/clbarry/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/clbarry/Personal-Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^10.4.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "http-server": "^14.1.1",
+    "prettier": "^3.8.3",
+    "reload": "^3.4.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
