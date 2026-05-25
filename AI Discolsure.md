@@ -37,6 +37,16 @@ AI Used: Claude Sonnet 4.6
 
 - I had issues with deployment in Netlify. I used Claude to paste the error and explain what to do. I needed to removd the build command because the site only included HTML/CSS or I needed to add a build command in the Json file. I chose to removed the build command on Netlify. 
 
+- I used generative AI to create the README file using the following prompt. Pompt 
+    I want you to think as a full-stack engineer with experience in HTML and CSS, and I want you to create a ReadMe file for this project using the following guide I am providing.
+    Good ReadMe:
+     Good project name
+     Project Objective
+     Screenshots (gifs are preferred)
+     Tech requirements
+     Author with link to homepage: https://6a144a03a26fdfb8ffbbcc98--careybarry.netlify.app/
+     Reference to the class link: https://johnguerra.co/classes/webDevelopment_online_summer_2026/
+
 
 ***************************************************
 AI Used for Publications Page Using the Following Prompts
