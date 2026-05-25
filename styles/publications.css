@@ -1,0 +1,516 @@
+/* ============================================================
+   publications.css  |  Carey Barry personal site
+   Extends the shared Bootstrap base with page-specific styles.
+   Color palette aligned with site-wide CSS variables.
+   ============================================================ */
+
+:root {
+    /* ── Brand colors (shared across all pages) ── */
+    --primary-font-color:   #1b323d;
+    --quote-font-color:     #3d6b7a;
+    --link-color:           #2e7d9a;
+    --link-visited:         #7c3f7a;
+    --hover-backgrnd:       #c2dfe8;
+    --active-backgrnd:      #1a5c73;
+    --active-font-color:    #f1faf7;
+    --site-background-color:#f1faf7;
+
+    /* ── Publications-page extras (derived from palette) ── */
+    --dark-bar:             #1b323d;   /* social bar & footer  */
+    --dark-bar-text:        #a8c4ce;   /* muted text on dark   */
+    --dark-bar-hover:       #f1faf7;   /* bright on hover      */
+    --card-border:          #ccdde3;   /* card outlines        */
+    --card-bg:              #ffffff;
+    --card-bg-alt:          #eaf4f7;   /* thumbnail wells      */
+    --section-label-color:  #3d6b7a;
+    --badge-conf-bg:        #d4edf5;
+    --badge-conf-text:      #1a5c73;
+    --badge-chapter-bg:     #faeeda;
+    --badge-chapter-text:   #633806;
+    --badge-exam-bg:        #e8e4f8;
+    --badge-exam-text:      #3c3489;
+    --featured-accent:      #1a5c73;   /* left border on featured card */
+    --thumb-icon-color:     #7aafbf;
+
+    /* ── Typography ── */
+    --heading-font: Georgia, 'Times New Roman', serif;
+    --text-font:    Lucida, serif;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+body {
+    background-color: var(--site-background-color);
+    color: var(--primary-font-color);
+    font-family: var(--text-font);
+}
+
+a:link    { color: var(--link-color); }
+a:visited { color: var(--link-visited); }
+a:hover   { background: var(--hover-backgrnd); }
+a:active  {
+    background-color: var(--active-backgrnd);
+    color: var(--active-font-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-font-color);
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6, p, li {
+    font-family: var(--text-font);
+    color: var(--primary-font-color);
+}
+
+.quotes {
+    font-style: italic;
+    color: var(--quote-font-color);
+}
+
+/* ============================================================
+   SOCIAL BAR  (top strip)
+   ============================================================ */
+.social-bar {
+    background-color: var(--dark-bar);
+    padding: 6px 0;
+}
+
+.social-bar .nav-link {
+    color: var(--dark-bar-text);
+    font-family: var(--text-font);
+    font-size: 0.78rem;
+    padding: 0 10px;
+    letter-spacing: 0.03em;
+}
+
+.social-bar .nav-link:hover {
+    color: var(--dark-bar-hover);
+    background: transparent;
+}
+
+.social-bar .nav-link svg {
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.social-bar .nav-link:hover svg {
+    opacity: 1;
+}
+
+/* ============================================================
+   SITE HEADER
+   ============================================================ */
+.site-header {
+    background-color: var(--card-bg);
+    border-bottom: 2px solid var(--card-border);
+    padding: 18px 0 0 0;
+}
+
+.site-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.site-header .pronouns {
+    font-family: var(--text-font);
+    font-size: 0.82rem;
+    color: var(--quote-font-color);
+    font-style: italic;
+}
+
+/* ── Horizontal nav ── */
+.main-nav {
+    margin-top: 14px;
+}
+
+.main-nav .nav-link {
+    font-family: var(--text-font);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--quote-font-color);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+}
+
+.main-nav .nav-link:hover {
+    color: var(--primary-font-color);
+    background: var(--hover-backgrnd);
+    border-bottom-color: var(--link-color);
+}
+
+.main-nav .nav-link.active {
+    color: var(--primary-font-color);
+    background: transparent;
+    border-bottom-color: var(--primary-font-color);
+}
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+main {
+    padding: 3rem 0 4rem;
+}
+
+.intro-text {
+    font-size: 0.93rem;
+    color: var(--quote-font-color);
+    margin-bottom: 1rem;
+}
+
+.intro-text a {
+    color: var(--link-color);
+}
+
+/* ============================================================
+   SECTION LABELS
+   ============================================================ */
+.section-label {
+    font-family: var(--text-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--section-label-color);
+    margin-bottom: 1.2rem;
+    border-top: 1px solid var(--card-border);
+    padding-top: 1.4rem;
+    margin-top: 2rem;
+}
+
+/* ============================================================
+   FILTER BUTTONS
+   ============================================================ */
+.filter-label {
+    font-family: var(--text-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--section-label-color);
+    margin-right: 4px;
+}
+
+.filter-btn {
+    font-family: var(--text-font);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    color: var(--quote-font-color);
+    padding: 5px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.filter-btn:hover {
+    background: var(--hover-backgrnd);
+    color: var(--primary-font-color);
+    border-color: var(--link-color);
+}
+
+.filter-btn.active {
+    background: var(--active-backgrnd);
+    color: var(--active-font-color);
+    border-color: var(--active-backgrnd);
+}
+
+/* ============================================================
+   FEATURED WORKS CARD
+   ============================================================ */
+.featured-section {
+    margin-bottom: 2.5rem;
+}
+
+.featured-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--featured-accent);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.15s;
+}
+
+.featured-card:hover {
+    box-shadow: 0 4px 18px rgba(27, 50, 61, 0.12);
+}
+
+.featured-card-inner {
+    display: flex;
+    align-items: stretch;
+}
+
+.featured-thumb {
+    width: 200px;
+    min-width: 200px;
+    background: var(--card-bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-right: 1px solid var(--card-border);
+    flex-shrink: 0;
+}
+
+.featured-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--thumb-icon-color);
+    font-size: 0.72rem;
+    font-family: var(--text-font);
+    text-align: center;
+    padding: 12px;
+}
+
+.featured-thumb-placeholder i {
+    font-size: 2.8rem;
+}
+
+.featured-body {
+    padding: 1.6rem 1.8rem;
+    flex: 1;
+}
+
+.featured-label {
+    font-family: var(--text-font);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--section-label-color);
+    margin-bottom: 0.5rem;
+}
+
+.featured-title {
+    font-family: var(--heading-font);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin: 0 0 0.5rem;
+    color: var(--primary-font-color);
+}
+
+.featured-authors {
+    font-family: var(--text-font);
+    font-size: 0.85rem;
+    color: var(--quote-font-color);
+    margin-bottom: 0.4rem;
+}
+
+.featured-venue {
+    font-family: var(--text-font);
+    font-size: 0.85rem;
+    color: var(--quote-font-color);
+    font-style: italic;
+    margin-bottom: 0.9rem;
+}
+
+.featured-abstract {
+    font-family: var(--text-font);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--primary-font-color);
+    margin-bottom: 1rem;
+}
+
+.featured-badge {
+    display: inline-block;
+    font-family: var(--text-font);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+    background: var(--badge-conf-bg);
+    color: var(--badge-conf-text);
+}
+
+/* ============================================================
+   PUBLICATION CARDS
+   ============================================================ */
+.pub-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.15s;
+}
+
+.pub-card:hover {
+    box-shadow: 0 2px 12px rgba(27, 50, 61, 0.1);
+}
+
+.pub-card-inner {
+    display: flex;
+    align-items: stretch;
+}
+
+/* ── Thumbnail ── */
+.pub-thumb {
+    width: 120px;
+    min-width: 120px;
+    background: var(--card-bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-right: 1px solid var(--card-border);
+    flex-shrink: 0;
+}
+
+.pub-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pub-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--thumb-icon-color);
+    font-size: 0.65rem;
+    font-family: var(--text-font);
+    text-align: center;
+    padding: 8px;
+}
+
+.pub-thumb-placeholder i {
+    font-size: 1.8rem;
+}
+
+/* ── Card body ── */
+.pub-body {
+    padding: 1.2rem 1.4rem;
+    flex: 1;
+}
+
+/* ── Type badges ── */
+.pub-type-badge {
+    display: inline-block;
+    font-family: var(--text-font);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.badge-journal {
+    background: var(--badge-conf-bg);
+    color: var(--badge-conf-text);
+}
+
+.badge-chapter {
+    background: var(--badge-chapter-bg);
+    color: var(--badge-chapter-text);
+}
+
+.badge-exam {
+    background: var(--badge-exam-bg);
+    color: var(--badge-exam-text);
+}
+
+/* ── Citation text ── */
+.pub-citation {
+    font-family: var(--text-font);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--primary-font-color);
+    margin: 0 0 0.6rem;
+}
+
+.pub-citation .title {
+    font-weight: 600;
+    color: var(--primary-font-color);
+}
+
+.pub-citation .venue {
+    font-style: italic;
+    color: var(--quote-font-color);
+}
+
+/* ── Card links ── */
+.pub-links a {
+    font-family: var(--text-font);
+    font-size: 0.76rem;
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 14px;
+    letter-spacing: 0.02em;
+    background: transparent;
+}
+
+.pub-links a:hover {
+    color: var(--primary-font-color);
+    background: var(--hover-backgrnd);
+    text-decoration: underline;
+}
+
+.pub-links a:visited {
+    color: var(--link-visited);
+}
+
+.pub-links i {
+    margin-right: 3px;
+    font-size: 0.72rem;
+}
+
+/* ── Scholar note ── */
+.scholar-note {
+    font-family: var(--text-font);
+    font-size: 0.82rem;
+    color: var(--quote-font-color);
+}
+
+.scholar-note a {
+    color: var(--link-color);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    background-color: var(--dark-bar);
+    color: var(--dark-bar-text);
+    font-family: var(--text-font);
+    font-size: 0.8rem;
+    padding: 18px 0;
+    text-align: center;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 640px) {
+    .featured-thumb { display: none; }
+}
+
+@media (max-width: 576px) {
+    .pub-thumb { display: none; }
+}

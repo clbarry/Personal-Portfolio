@@ -1,58 +1,516 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <!--Load Bootstrap (if using for CSS) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <!-- Begin SEO-->
-    <title>Carey Barry Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Publications | Carey Barry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles/publications.css" rel="stylesheet">
 
 </head>
 <body>
-    <!--Load Bootstrap (if using for JS)-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <header id="header">
-        <!-- Social Media & Contacts in top -->
-        <ul>
-            <li><a href= url'www.linkedin.com/in/carey-barry-278b8a140'>LinkedIn</a></li>
-            <li><a href= url'https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en'>Google Scholar</a></li>
-            <li><a href= url'https://orcid.org/0000-0001-6133-0087'>ORCID</a></li>
-            <li><a href= url'https://www.instagram.com/c_barrypa/'>Instagram</a></li>
-            <li><a href= url'https://github.com/clbarry'>GitHub</a></li>
-        </ul>
 
-        <!-- Site Navigation -->
-        <div id="master-header">
-            <h1 class="name-header">Carey Barry</h1>
-                <h3 class="pronouns">she/her</h3>
-                
-            <!-- Site Navigation -->
-                <nav id="site-nav" class="site-nav">
-                    <ul>
-                        <li><a href='index.html'>About</a></li>
-                        <li><a href='publications.html'>Publications</a></li>
-                        <li><a href='teaching.html'>Teaching</a></li>
-                    </ul>
-                </nav>
+<div class="social-bar">
+  <div class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/carey-barry-278b8a140" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:5px;"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:5px;"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>Google Scholar
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://orcid.org/0000-0001-6133-0087" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:5px;"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>ORCID
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/c_barrypa/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:5px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>Instagram
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/clbarry" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:5px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="d-flex align-items-baseline gap-3">
+      <h1>Carey Barry</h1>
+      <span class="pronouns">she/her</span>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="row mb-4">
+      <div class="col-md-9">
+        <p class="intro-text">
+          Peer-reviewed articles, book chapters, and standardized assessment tools in physician assistant education,
+          surgical training, and health informatics. Full list on
+          <a href="https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          and <a href="https://orcid.org/0000-0001-6133-0087" target="_blank">ORCID</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         FEATURED WORKS
+    ══════════════════════════════════════════ -->
+    <div class="featured-section">
+      <p class="section-label" style="border-top:none; padding-top:0; margin-top:0;">Featured Work</p>
+
+      <div class="featured-card">
+        <div class="featured-card-inner">
+          <div class="featured-thumb">
+            <div class="featured-thumb-placeholder">
+              <i class="bi bi-heart-pulse"></i>
+              <span>ACM IUI 2026</span>
+            </div>
+          </div>
+          <div class="featured-body">
+            <span class="featured-badge">Conference Paper &mdash; ACM IUI &rsquo;26</span>
+            <p class="featured-title">The HEART Interface: Visualizing Risk Score Uncertainty in the Cardiothoracic ICU</p>
+            <p class="featured-authors">M. Nourani, L. Nguyen, C. Barry, Q. Jin, and M. Tory</p>
+            <p class="featured-venue">Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI &rsquo;26), ACM, pp. 1019&ndash;1036, 2026</p>
+            <p class="featured-abstract">
+              This paper presents the HEART Interface, a visualization system designed to communicate risk score uncertainty to clinicians in the cardiothoracic ICU. The work addresses a critical challenge in clinical decision support: helping care teams interpret and act on probabilistic risk scores in high-stakes perioperative settings.
+            </p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1145/3742413.3789109" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+              <a href="https://dl.acm.org/doi/10.1145/3742413.3789109" target="_blank"><i class="bi bi-box-arrow-up-right"></i>ACM Digital Library</a>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
 
-    <!-- Main Body-->
-    <main>
+    <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+      <span class="filter-label">Filter</span>
+      <button class="filter-btn active" onclick="filterPubs('all',this)">All</button>
+      <button class="filter-btn" onclick="filterPubs('journal',this)">Journal Articles</button>
+      <button class="filter-btn" onclick="filterPubs('chapter',this)">Book Chapters</button>
+      <button class="filter-btn" onclick="filterPubs('exam',this)">Exam Development</button>
+    </div>
 
+    <!-- JOURNAL / CONFERENCE ARTICLES -->
+    <p class="section-label" id="lbl-journal">Journal &amp; Conference Articles</p>
 
+    <!-- 1: HEART Interface 2026 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1145/3742413.3789109" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-heart-pulse"></i><span>ACM IUI<br>2026</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Conference Paper</span>
+          <p class="pub-citation">
+            M. Nourani, L. Nguyen, C. Barry, Q. Jin, and M. Tory,
+            &ldquo;<span class="title">The HEART Interface: Visualizing Risk Score Uncertainty in the Cardiothoracic ICU,</span>&rdquo;
+            in <span class="venue">Proceedings of the 31st International Conference on Intelligent User Interfaces (IUI &apos;26),</span>
+            Association for Computing Machinery, New York, NY, USA, pp. 1019&ndash;1036, 2026.
+            DOI: 10.1145/3742413.3789109
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1145/3742413.3789109" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+            <a href="https://dl.acm.org/doi/10.1145/3742413.3789109" target="_blank"><i class="bi bi-box-arrow-up-right"></i>ACM DL</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- 2: Gender Minority PA Applicants 2025 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1097/JPA.0000000000000647" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>J Physician<br>Assist Educ<br>2025</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            J. Rolls, M. Showstark, S. Najmabadi, R. Loder, C. Barry, and T. Honda,
+            &ldquo;<span class="title">Gender Minority Physician Assistant/Associate Applicants and Likelihood of Matriculation: A Retrospective Analysis,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 36, no. 2, pp. 113&ndash;119, Jun. 2025. DOI: 10.1097/JPA.0000000000000647
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/JPA.0000000000000647" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </main>
+    <!-- 3: Military Veteran Matriculation 2024 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1097/JPA.0000000000000568" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>J Physician<br>Assist Educ<br>2024</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            A. Broughton, A. Landry, M. Showstark, C. L. Barry, S. Najmabadi, J. Rolls, and T. Honda,
+            &ldquo;<span class="title">Military Veteran Matriculation in US Physician Associate/Assistant Programs,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 35, no. 2, p. 156, 2024. DOI: 10.1097/JPA.0000000000000568
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/JPA.0000000000000568" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Footer --> 
-    <footer id="footer">  
-        <p>Copyright &copy; 2026 Carey Barry. All rights reserved.</p> 
-    </footer>
+    <!-- 4: Non-Native English-Speaking Applicants 2024 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1080/10872981.2024.2312713" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>Medical<br>Education<br>Online 2024</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            S. Najmabadi, V. Valentin, J. Rolls, M. Showstark, L. Elrod, C. Barry, A. Broughton, M. Bessette, and T. Honda,
+            &ldquo;<span class="title">Non-Native English-Speaking Applicants and the Likelihood of Physician Assistant Program Matriculation,</span>&rdquo;
+            <span class="venue">Medical Education Online,</span>
+            vol. 29, no. 1, p. 2312713, 2024. DOI: 10.1080/10872981.2024.2312713
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1080/10872981.2024.2312713" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5: Professionalism / Licensing Board 2023 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10653293" target="_blank">
+            <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10653293/bin/jpa-34-278-g001.jpg"
+                 alt="Results figure from Barry et al. 2023"
+                 onerror="this.parentElement.innerHTML='<div class=\'pub-thumb-placeholder\'><i class=\'bi bi-file-earmark-text\'></i><span>J Physician<br>Assist Educ<br>2023</span></div>'">
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            C. L. Barry, J. Coombs, S. Buchs, S. Kim, T. Grant, T. Henry, J. Parente, and J. Spackman,
+            &ldquo;<span class="title">Professionalism in Physician Assistant Education as a Predictor of Future Licensing Board Disciplinary Actions,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 34, no. 4, p. 278, 2023. DOI: 10.1097/JPA.0000000000000515
+          </p>
+          <div class="pub-links">
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10653293" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PMC Full Text</a>
+            <a href="https://doi.org/10.1097/JPA.0000000000000515" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/37467183" target="_blank"><i class="bi bi-journal-medical"></i>PubMed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6: Implicit Association Test 2023 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1097/JPA.0000000000000523" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>J Physician<br>Assist Educ<br>2023</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            D. Ryujin, D. Dalton, M. Yole-Lobe, M. DiBiase, P. Phelps, A. Madden, J. Clark, C. L. Barry, J. E. Rodriguez, and T. Honda,
+            &ldquo;<span class="title">Implicit Association Test Alone Is Not Sufficient to Increase Underrepresented Minority Representation in Physician Assistant Programs,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 34, no. 4, p. 295, 2023. DOI: 10.1097/JPA.0000000000000523
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/JPA.0000000000000523" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7: PA Citizenship / Matriculation 2022 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1186/s12909-022-03947-x" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>BMC Med<br>Education<br>2022</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            M. Showstark, M. Bessette, C. L. Barry, S. Najmabadi, J. Rolls, C. Hamilton, V. L. Valentin, A. Quella, and T. Honda,
+            &ldquo;<span class="title">PA Applicant U.S. Citizenship Status and Likelihood of Program Matriculation,</span>&rdquo;
+            <span class="venue">BMC Medical Education,</span>
+            vol. 22, no. 1, p. 887, 2022. DOI: 10.1186/s12909-022-03947-x
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1186/s12909-022-03947-x" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8: Aberrant Patient Logging 2022 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1097/JPA.0000000000000437" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-text"></i><span>J Physician<br>Assist Educ<br>2022</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            E. A. Min, D. Lie, C. Barry, A. Moloney-Johns, S. T. Hibbard, T. S. Ritsema, M. D&apos;Aquila, and T. Honda,
+            &ldquo;<span class="title">Validation of a Novel Statistical Method to Identify Aberrant Patient Logging: A Multi-Institutional Study,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 33, no. 3, p. 192, 2022. DOI: 10.1097/JPA.0000000000000437
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/JPA.0000000000000437" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9: PACKRAT / PANCE 2019 -->
+    <div class="pub-card" data-type="journal">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1097/JPA.0000000000000256" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-file-earmark-bar-graph"></i><span>J Physician<br>Assist Educ<br>2019</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-journal">Journal Article</span>
+          <p class="pub-citation">
+            T. Honda, C. Barry, S. R. Buchs, B. L. Garbas, S. T. Hibbard, A. McLellan, T. Riethle, and L. E. Swanchak,
+            &ldquo;<span class="title">Considerations Around Predicting Physician Assistant National Certifying Exam Scores From PACKRAT&#174;: A Multiprogram Study,</span>&rdquo;
+            <span class="venue">The Journal of Physician Assistant Education,</span>
+            vol. 30, no. 2, pp. 86&ndash;92, 2019. DOI: 10.1097/JPA.0000000000000256
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1097/JPA.0000000000000256" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK CHAPTERS -->
+    <p class="section-label" id="lbl-chapter">Book Chapters (Peer Reviewed)</p>
+
+    <!-- 8 -->
+    <div class="pub-card" data-type="chapter">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1016/j.cpha.2020.11.003" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-book"></i><span>PA Clinics<br>Lab Medicine<br>2021</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-chapter">Book Chapter</span>
+          <p class="pub-citation">
+            C. Barry,
+            &ldquo;<span class="title">Surgical Wound Infections,</span>&rdquo;
+            in <span class="venue">Physician Assistant Clinics: Laboratory Medicine,</span>
+            C. Fankhanel, Ed. Philadelphia: Elsevier, vol. 6, no. 2, pp. 295&ndash;307, Jan. 2021.
+            DOI: 10.1016/j.cpha.2020.11.003
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.cpha.2020.11.003" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S2405799120300609" target="_blank"><i class="bi bi-box-arrow-up-right"></i>ScienceDirect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="pub-card" data-type="chapter">
+      <div class="pub-card-inner">
+        <div class="pub-thumb">
+          <a href="https://doi.org/10.1016/j.cpha.2019.02.009" target="_blank">
+            <div class="pub-thumb-placeholder"><i class="bi bi-book"></i><span>PA Clinics<br>Lab Medicine<br>2019</span></div>
+          </a>
+        </div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-chapter">Book Chapter</span>
+          <p class="pub-citation">
+            C. Barry,
+            &ldquo;<span class="title">Immunohematology and Transfusion Medicine,</span>&rdquo;
+            in <span class="venue">Physician Assistant Clinics: Laboratory Medicine,</span>
+            J. McDaniel, Ed. Philadelphia: Elsevier, vol. 4, no. 3, pp. 591&ndash;607, Jul. 2019.
+            DOI: 10.1016/j.cpha.2019.02.009
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.cpha.2019.02.009" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S2405799119300191" target="_blank"><i class="bi bi-box-arrow-up-right"></i>ScienceDirect</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXAM DEVELOPMENT -->
+    <p class="section-label" id="lbl-exam">Standardized Exam Development (PAEA)</p>
+
+    <!-- 10 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2019</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">Emergency Medicine End of Rotation Exam, Version 7, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2019.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2019</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">General Surgery End of Rotation Exam, Version 7, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2019.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2018</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">Emergency Medicine End of Rotation Exam, Version 6, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2018.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2018</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">General Surgery End of Rotation Exam, Version 6, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2018.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2017</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">Emergency Medicine End of Rotation Exam, Version 5, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2017.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="pub-card" data-type="exam">
+      <div class="pub-card-inner">
+        <div class="pub-thumb"><div class="pub-thumb-placeholder"><i class="bi bi-clipboard2-pulse"></i><span>PAEA<br>Assess. 2017</span></div></div>
+        <div class="pub-body">
+          <span class="pub-type-badge badge-exam">Exam Development</span>
+          <p class="pub-citation">
+            T. Cleveland, F. Acevedo, C. Barry, et al.,
+            &ldquo;<span class="title">General Surgery End of Rotation Exam, Version 5, Forms 1 and 2.</span>&rdquo;
+            Washington, DC: Physician Assistant Education Association, 2017.
+          </p>
+          <div class="pub-links"><a href="https://paeaonline.org" target="_blank"><i class="bi bi-box-arrow-up-right"></i>PAEA</a></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="scholar-note mt-4">
+      For the complete and most current list, visit
+      <a href="https://scholar.google.com/citations?user=KxZUdqwAAAAJ&hl=en" target="_blank">Google Scholar <i class="bi bi-box-arrow-up-right" style="font-size:0.75rem;"></i></a>
+      or <a href="https://orcid.org/0000-0001-6133-0087" target="_blank">ORCID <i class="bi bi-box-arrow-up-right" style="font-size:0.75rem;"></i></a>.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="mb-0">Copyright &copy; 2026 Carey Barry. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function filterPubs(type, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.pub-card').forEach(card => {
+    card.style.display = (type === 'all' || card.dataset.type === type) ? 'block' : 'none';
+  });
+  if (type === 'all') {
+    document.querySelectorAll('.section-label').forEach(l => l.style.display = 'block');
+  } else {
+    document.querySelectorAll('.section-label').forEach(l => l.style.display = 'none');
+    var t = document.getElementById('lbl-' + type);
+    if (t) t.style.display = 'block';
+  }
+}
+</script>
 </body>
 </html>
