@@ -58,26 +58,12 @@ Built for: [Web Development — Northeastern University (Online, Summer 2026)](h
 
 ## AI Use Disclosure
 
-- Used Claude to determine what to add to the `.gitignore` file.
-  - *Prompt: "I am starting a project using HTML, CSS, and JS what do I add to a gitignore"*
-
-- Used Claude for color palette planning.
-  - *Prompts included questions about color values such as `#162b35`, complementary background colors, contrast ratios, and hover/active/visited link colors. Final palette:*
-    - `#162b35` — Dark Slate Blue/Deep Teal (font color)
-    - `#3d6b7a` — Muted Teal (quote font color)
-    - `#f1faf7` — Whisper Teal (background color)
-    - `#6b4f7a` — Dusty Plum (link color)
-    - `#7c3f7a` — Deep Magenta Purple (visited link)
-    - `#c2dfe8` — Teal Wash (hover background)
-
-- Used Claude to troubleshoot YouTube video rendering issues.
-  - *Prompt: "What are common reasons that a video may not display, they are hosted on youtube."*
-
-- Used Claude to generate this README file.
-  - *Prompt: "Create a ReadMe file for this project using the following guide..."*
+See AI Discolsures markdown file. 
 
 ---
 
 ## Sources
 
+- https://developer.mozilla.org/en-US/
+- Codecademy
 - [Stack Overflow — Horizontal list items](https://stackoverflow.com/questions/15710701/horizontal-list-items)
