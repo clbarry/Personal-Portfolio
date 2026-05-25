@@ -61,7 +61,7 @@ npx http-server
 ## Author
 
 **Carey Barry**
-[Homepage](https://6a144a03a26fdfb8ffbbcc98--careybarry.netlify.app/)
+[Homepage](https://careybarry.netlify.app/)
 
 ---
 
