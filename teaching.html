@@ -52,7 +52,7 @@
                 <h3 class="subhead2">Surgical Skills Techniques</h3>
 
                     <!-- SURGICAL SKILLS LAB IMAGE-->
-                    <figure class="vertical-image">
+                    <figure class="horizontal-image" class="solo-image-hora">
                         <img 
                             src="/Assets/Images/SurgScrubLab.JPG" 
                             alt="A photo of PA students wearing surgical PPE after learning how to scrub in."/>
@@ -72,16 +72,34 @@
                 <h3 class="subhead2">Surgical Knot Tying Video Demonstrations</h3>
                     <!-- Video #1 Left hand two-handed surgical knot tying -->
                     <!-- Video resource: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio -->
-                    <video src="https://youtu.be/8gRtGmUHE6I?si=Ip3ibnAhMNKVeTUi" controls>Left two-handed surgical knot tying
+                    <iframe 
+                        class="youtube-video"
+                        width="560" height="315" 
+                        src="https://www.youtube.com/embed/8gRtGmUHE6I?si=2UseHVd9ZVo6TI7I" 
+                        title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        Left two-handed surgical knot tying
                         <p>Your browser doesn't support HTML video. Here is a <a href="https://youtu.be/8gRtGmUHE6I?si=Ip3ibnAhMNKVeTUi">link to the video</a> instead.
                         </p>
-                    </video>
+                    </iframe>
                     
                     <!-- Video #2 Left hand one-handed surgical knot tying -->
-                    <video src="https://youtu.be/BcI3gQ6lp1I?si=1IcBVEfVgMkAl_o9" controls>Left one-handed surgical knot tying
+                    <!-- YouTube Video - does not nest in <video><video> as they are different -->
+                    <iframe 
+                        class="youtube-video"
+                        width="560" height="315" 
+                        src="https://www.youtube.com/embed/BcI3gQ6lp1I?si=Dg19lX96a4_XG0Av" 
+                        title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        Left one-handed surgical knot tying
                         <p>Your browser doesn't support HTML video. Here is a <a href="https://youtu.be/BcI3gQ6lp1I?si=1IcBVEfVgMkAl_o9">link to the video</a> instead.
-                        </p>
-                    </video>
+                            </p>
+                    </iframe>"
+                    
 
                 <!-- Courses and Topics -->        
             <h2 class="subhead" id="courses-topics">Course Topics</h2>
