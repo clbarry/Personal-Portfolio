@@ -32,6 +32,8 @@ AI Used: Claude Sonnet 4.6
 - I had an issue with video rendering. I used Claude as follows. 
     Prompt used: What are common reasons that a video may not display, they are hosted on youtube.
 
+- I had an issue with the links for social media not working. I used Claude as follows. 
+    Prompt: What are common issues with links to social media sites in html. 
 
 
 ***************************************************
