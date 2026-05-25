@@ -30,6 +30,8 @@ The visual design of this portfolio was planned prior to development, covering l
 
 📄 [View Design Document](./Assets/Design/Design.pdf)
 
+*Creative Addition:* My creative addition was the custom color design to give the page a cohesive feel. 
+
 ---
 
 ## Tech Requirements
