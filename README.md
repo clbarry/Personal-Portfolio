@@ -37,6 +37,12 @@ The visual design of this portfolio was planned prior to development, covering l
 
 ---
 
+### Presentation Slides
+
+![Presentation slides](https://docs.google.com/presentation/d/1lorHMWKaW5lD0miGP5CgWFl7e8Q75jZo1FAfkeE1B9Y/edit?usp=sharing)
+
+---
+
 ## Tech Requirements
 
 | Tool / Technology | Purpose |
